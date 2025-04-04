@@ -53,6 +53,27 @@ body{
             color: #0497f7 ;
         }
     }
+    .descripción{
+        grid-column: span 2;
+        position: absolute;
+        margin-left: 15%;
+        color: #a5a3a3 ;
+        font-size: 14px;
+        text-align: justify;
+        height: 50px;
+        overflow: hidden;
+        span{
+            color: #000;
+        }
+       
+    }
+    .descripción:active{
+        height: 100%;
+        span{
+            display: none;
+        }
+    }
+        
 }
 .cantidad{
     position: absolute;
@@ -60,8 +81,4 @@ body{
     margin-top: 120%;
     display: flex;
     align-items: center;
-    
-    sgv{
-        cursor: pointer;
-    }
 }
