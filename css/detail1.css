@@ -49,13 +49,14 @@ body{
     }
     .star{
         font-size: 15px;
+        margin-left: -2%;
         span{
             color: #0497f7 ;
         }
     }
     .descripción {
         text-align: justify;
-        margin-left: 20%;
+        margin-left: 22%;
         width: 100%;
         font-size: 14px;
         color: #a5a3a3;
@@ -87,7 +88,7 @@ body{
         display: none;
       }
     .tallas{
-      margin-top: 3%;
+      margin-top: 5%;
       margin-left: -30%;
       font-size: 14px ;
       .talla{
@@ -104,7 +105,7 @@ body{
     }
     .color{
         margin-left: 75%;
-        margin-top: -13%;
+        margin-top: -12%;
         font-size: 14px ;
        p{
         margin-left: -25%;
@@ -115,7 +116,7 @@ body{
 .cantidad{
     position: absolute;
     margin-left: 67%;
-    margin-top: 120%;
+    margin-top: 100%;
     display: flex;
     align-items: center;
 }
@@ -157,13 +158,13 @@ body{
         grid-column: 2 / 4;
         text-align: center;
         margin-left: 10%;
-        margin-top: -80%;
+        margin-top: -60%;
         h3{
             font-size: 50px;
         }
         .star{
-            margin-left: -6%;
             margin-top: 2%;
+            margin-left: -6%;
             font-size: 25px;
         }
         .descripción {
@@ -194,7 +195,7 @@ body{
     }
     .cantidad{
         margin-left: 70%;
-        margin-top: 4%;
+        margin-top: 6%;
         h3{
             font-size: 30px;
         }
@@ -206,7 +207,7 @@ body{
     }
     .comprar{
         position: none;
-        bottom: 30%;
+        bottom: 22%;
         left: 50%;
         width: fit-content;
         height: 10%;

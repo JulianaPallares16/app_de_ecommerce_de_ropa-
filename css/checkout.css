@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Encode Sans", sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2px 2px 2px 2px;
+}   
+a{
+    margin-left: -45%;
+    color: #000;
+
+}
+h3{
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    
+}
+svg{
+    grid-column: 3;
+    margin-left: 45%;
+}
+.imagen{
+    background-color: blueviolet;
+    grid-column: span 4;
+    text-align: justify;
+    margin-top: 2% ;
+    img{
+        border-radius: 10%;
+        width:30%;
+        height: 80%;
+        margin-left: 8%;
+    }
+    h3{
+        margin-left: 40%;
+        margin-top: -28%;
+
+    }
+    p{
+        margin-left:40% ;
+        margin-top: 2%;
+        color:#a5a3a3 ;
+        font-size: 15px;
+    }
+    .precio{
+        margin-left: 40%;
+        margin-top: 3%;
+    }
+   
+}
+.puntos{
+    position: absolute;
+    margin-left: 84%;
+    margin-top: 12%;
+    font-size: 20px;
+}
+.cantidad{
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 28%;
+    .cantidad-item{
+        display: inline-block;
+    }
+   
+}
+.puntos2{
+    position: absolute;
+    margin-left: 84%;
+    margin-top: 50%;
+    font-size: 20px;
+}
+.cantidad2{
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 65%;
+    .cantidad-item{
+        display: inline-block;
+    }
+   
+}
