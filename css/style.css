@@ -2,18 +2,19 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;      /* Se aplica a todos los elementos para que no tengan márgenes o rellenos por defecto y se midan correctamente.*/
 }
 body{
-    font-family: "Encode Sans", sans-serif;
+    font-family: "Encode Sans", sans-serif; /*Fuente de la página*/
 }
-.container{
+.container{       /*  Definí un grid de 4 columnas y 3 filas, con márgenes y espacios entre elementos. Es la estructura principal del diseño.*/
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3,1fr);
     margin: 5% 2% 15% 2%;
     gap: 5px;
 }
+/* Ocupa todo el ancho (las 4 columnas del grid). Contiene un p con color gris y una imagen que es  el perfil del usuario alineada a la derecha.*/
 .encabezado{
     grid-column: span 4;
     p{
@@ -29,6 +30,7 @@ body{
     }
    
 }
+/*Ocupa 3 columnas. Tiene un borde redondeado. Es una barra de busqueda*/
 .barra{
     grid-column: span 3;
     border: solid #cecdcc 2px;
@@ -41,6 +43,7 @@ body{
         color: #cecdcc;
     }
 }
+/*Ocupa la columna 4. Fondo negro, contenido centrado verticalmente.*/
 .filtro{
     grid-column: 4;
     background-color: #000;
@@ -58,6 +61,7 @@ body{
     }
 
 }
+/* Caja de producto o tarjeta. Tiene borde y se oscurece al pasar el cursor.*/
 .item{
     border-radius: 10px;
     border: solid #cecdcc 2px;
@@ -72,6 +76,7 @@ body{
     background-color: #000;
     color:#ffffff;
 }
+/* Estas clases representan productos individuales (fotos con texto, íconos de favoritos, etc.).*/
 .imagen1{
     a{
         text-decoration: none;
@@ -211,6 +216,7 @@ body{
         color: #000;
      }
 }
+/*Barra de navegación inferior fija. Centranda con transform: translateX(-50%). Contiene íconos redondeados que cambian de color al hacer hover.*/
 .footer{
     position: fixed;
     bottom: 0;

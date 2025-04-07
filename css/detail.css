@@ -7,19 +7,22 @@
 body{
     font-family: "Encode Sans", sans-serif;
 }
+/* Contenedor principal con grid de 4 columnas */
 .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 2%  1px 1px;
 }
+/* Sección de imagen del producto */
 .imagen{
-    grid-column: span 4;
+    grid-column: span 4; /* Ocupa todas las columnas */
     text-align: center;
     img{
     position: relative;
     border-radius: 10%;
     width:70%;
     }
+      /* Botón de volver (flecha) */
     a{
         position: absolute;
         color: #000;
@@ -30,6 +33,7 @@ body{
         margin-top: 5%;
         box-shadow: 0 1px 5px #e5e3e3;
     }
+        /* Icono de corazón (favorito) */
     svg{
         position: absolute;
         background-color:#ffffff;
@@ -41,6 +45,7 @@ body{
         box-shadow: 0 1px 5px #e5e3e3;
     }
 }
+/* Información del producto */
 .info{
     grid-column: span 3;
     text-align: center;
@@ -53,6 +58,7 @@ body{
             color: #0497f7 ;
         }
     }
+        /* Descripción del producto con "Leer más" desplegable */
     .descripción {
         text-align: justify;
         margin-left: 20%;
@@ -64,9 +70,11 @@ body{
       span{
         color: black;
       }
+      /* Input oculto para mostrar más texto */
       #toggle-text {
         display: none;
       }
+       /* Área de texto visible */
       .texto {
         display: block;
         cursor: pointer;
@@ -74,9 +82,11 @@ body{
         height: 50px;
         transition: height 0.4s ease;
       }
+       /* Texto oculto por defecto */
       .mas {
         display: none;
       }
+        /* Al marcar el checkbox, se muestra el texto completo */
       #toggle-text:checked + .texto {
         height: auto;
       }
@@ -119,6 +129,7 @@ body{
     display: flex;
     align-items: center;
 }
+/* Botón fijo inferior "Add to Cart" */
 .comprar{
     position: fixed;
     bottom: 0;
@@ -137,6 +148,7 @@ body{
         margin-left: 10px;
     }
 }
+/* Estilos para pantallas grandes (mayores a 1024px) */
 @media (min-width: 1024px){
     .imagen{
         grid-column: span 2;
@@ -205,7 +217,7 @@ body{
 
     }
     .comprar{
-        position: none;
+        position: none; /* Anulado el fixed */
         bottom: 30%;
         left: 50%;
         width: fit-content;

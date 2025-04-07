@@ -7,6 +7,7 @@
 body{
     font-family: "Encode Sans", sans-serif;
 }
+/* Contenedor principal en formato grid de 3 columnas */
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -17,6 +18,7 @@ a{
     color: #000;
 
 }
+/* Título centrado en la segunda columna del grid */
 h3{
     grid-column: 2;
     display: flex;
@@ -24,6 +26,7 @@ h3{
     margin-left: 15%;
     
 }
+/* Posiciona el ícono en la tercera columna del grid */
 svg{
     grid-column: 3;
     margin-left: 45%;
@@ -55,33 +58,6 @@ svg{
     }
    
 }
-/*.imagen2{
-    grid-column: span 4;
-    text-align: justify;
-    margin-top: 2% ;
-    img{
-        border-radius: 10%;
-        width:30%;
-        height: 80%;
-        margin-left: 8%;
-    }
-    h3{
-        margin-left: 40%;
-        margin-top: -28%;
-
-    }
-    p{
-        margin-left:40% ;
-        margin-top: 2%;
-        color:#a5a3a3 ;
-        font-size: 15px;
-    }
-    .precio{
-        margin-left: 40%;
-        margin-top: 3%;
-    }
-   
-}*/
 .puntos{
     position: absolute;
     margin-left: 84%;
@@ -174,6 +150,7 @@ svg{
         margin-left: 8%;
     }
 }
+/* Botón de pago fijo en la parte inferior */
 .pay{
     grid-column: span 3;
     position: fixed;
@@ -191,11 +168,14 @@ svg{
        margin-left: 45%;
     }
 }
+/* MEDIA QUERY para pantallas grande*/
 @media (min-width: 1024px){
+     /* Contenedor con 2 columnas y márgenes grandes */
     .container{
         grid-template-columns: repeat(2, 1fr);
         margin: 50px 100px 
     }
+        /* Título más grande y centrado */
     h3{
         font-size: 35px;
         margin-left: -10%;
@@ -252,6 +232,7 @@ svg{
             margin-left: -31%;
         }
     }
+    /* Posición absoluta del botón en pantallas grandes */
     .pay{
         grid-column: 2;
         position: absolute;
